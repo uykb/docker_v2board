@@ -111,8 +111,8 @@ docker run -d \
 --name=v2board \
 --privileged=true \
 --restart always \
--v /usr/local/v2board:/usr/local/src \
--p 80:80 \
+-v /volume2/docker/v2board:/usr/local/src \
+-p 5448:80 \
 gz1903/v2board:1.6.0
 # 清除缓存垃圾
 rm -rf /usr/local/src/docker_v2board
